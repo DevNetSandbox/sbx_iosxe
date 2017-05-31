@@ -1,3 +1,5 @@
 ansible==2.2.1.0
 paramiko
 requests
+ncclient
+pyang
