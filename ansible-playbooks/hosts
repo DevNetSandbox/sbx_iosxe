@@ -1,0 +1,2 @@
+[routers]
+10.10.20.21 ansible_python_interpreter="/usr/bin/env python"

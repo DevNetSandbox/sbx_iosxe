@@ -1,0 +1,13 @@
+# Setup environment for ansible playbooks
+# Credentials for DevNet Open NX-OS Sandbox
+#    https://devnetsandbox.cisco.com/
+
+# usage: source .ansible_env
+
+# Required for some mac versions
+# http://stackoverflow.com/questions/37690054/python-and-openssl-version-reference-issue-on-osx
+export CRYPTOGRAPHY_ALLOW_OPENSSL_098=1
+
+# Authentication for ansible network modules
+export ANSIBLE_NET_USERNAME=root
+export ANSIBLE_NET_PASSWORD=cisco123
