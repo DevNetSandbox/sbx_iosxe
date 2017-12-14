@@ -10,12 +10,12 @@ import xml.dom.minidom
 # DEVNET Sandbox CSR1000v Lab 
 #
 # use the IP address or hostname of your CSR1000V device
-HOST = '10.10.20.21'
+HOST = '10.10.20.48'
 # use the NETCONF port for your IOS-XE device
 PORT = 830
 # use the user credentials for your IOS-XE device
-USER = 'root'
-PASS = 'cisco123'
+USER = 'cisco'
+PASS = 'cisco_1234!'
 
 
 # create a main() method
