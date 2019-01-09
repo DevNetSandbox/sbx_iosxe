@@ -1,0 +1,8 @@
+---
+- hosts: 10.10.20.100
+  connection: network_cli
+  remote_user: admin
+  tasks:
+    - name: run show version on remote devices
+      ios_command:
+        commands: show runn
