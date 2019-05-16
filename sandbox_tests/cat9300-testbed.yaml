@@ -13,10 +13,10 @@ devices:
         connections:
             admin:
                 protocol: ssh
-                ip: 10.10.20.48
+                ip: 10.10.20.100
             netconf:
-                ip: 10.10.20.48
+                ip: 10.10.20.100
                 port: 830
             restconf:
-                ip: 10.10.20.48
+                ip: 10.10.20.100
                 port: 443
