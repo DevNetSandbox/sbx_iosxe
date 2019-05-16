@@ -1,0 +1,22 @@
+testbed:
+    name: cat9k
+    tacacs:
+        username: developer
+    passwords:
+        tacacs: "C1sco12345"
+        enable: C1sco12345
+
+devices:
+    cat9k:
+        os: iosxe
+        type: iosxe
+        connections:
+            admin:
+                protocol: ssh
+                ip: 10.10.20.48
+            netconf:
+                ip: 10.10.20.48
+                port: 830
+            restconf:
+                ip: 10.10.20.48
+                port: 443
