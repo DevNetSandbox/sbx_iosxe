@@ -11,14 +11,14 @@ import xml.dom.minidom
 
 
 # the variables below assume the user is leveraging the
-# network programmability lab and accessing csr1000v
-# use the IP address or hostname of your CSR1000V device
-HOST = '10.10.20.48'
+# always on sandbox.
+HOST = 'ios-xe-mgmt.cisco.com'
 # use the NETCONF port for your IOS-XE device
-PORT = 830
+PORT = 10000
 # use the user credentials for your IOS-XE device
-USER = 'cisco'
-PASS = 'cisco_1234!'
+USER = 'root'
+PASS = 'D_Vay!_10&'
+
 # XML file to open
 FILE = 'get_interfaces.xml'
 

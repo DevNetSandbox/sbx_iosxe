@@ -1,14 +1,16 @@
-# DevNet IOS XE Programmability Sandbox 
+# DevNet IOS XE Programmability Sandboxes
 
-### *In Development: Coming Soon*
+Here you will find Sample Code, Scripts and Information for use with the DevNet Sandboxes running IOS XE. These include:
 
-Here you will find Sample Code, Scripts and Information for use in the DevNet [IOS XE Sandbox](). 
+* [NETCONF/RESTCONF on IOS XE - Always On](http://cs.co/sbx-iosxe)
+* [IOS XE on CSR Recommended Code - Reservable](https://devnetsandbox.cisco.com/RM/Diagram/Index/cae403c2-27af-4c7d-b1e1-99b7d42f1504?diagramType=Topology)
+* [IOS XE on CSR Latest Code - Always On](https://devnetsandbox.cisco.com/RM/Diagram/Index/38ded1f0-16ce-43f2-8df5-43a40ebf752e?diagramType=Topology)
+* [IOS XE on CSR Latest Code - Reservable](https://devnetsandbox.cisco.com/RM/Diagram/Index/a5823504-3391-47cc-93a4-8bcadc701839?diagramType=Topology)
 
-[DevNet Sandboxes](http://developer.cisco.com/sandbox) are all about providing an environment where developers can explore and test out whatever they are learning or working on.  But sometimes having a starting point, or inspiration can be helpful, and that's what this repository is all about.  
 
 And should you develop some interesting code targeting the Sandbox and want to share with the community, we'd love to include it here!!! Just fork the repo and review our [Pull Request instructions](pull-requests.md).  
 
-# Repo Resources 
+# Repo Resources
 
 ## Sandbox Management
 
@@ -16,13 +18,9 @@ And should you develop some interesting code targeting the Sandbox and want to s
 
 Ansible is a great technology for Configuration Management of the network, and we've provided some sample playbooks to take a look at.  Take a look at what's available here:  [ansible-playbooks/README.md](ansible-playbooks/README.md).
 
-*Coming Soon!!!*  
-
 ## Standard Model Driven Programmability with YANG
 
 Looking for details on YANG Data Models and using NETCONF, RESTCONF, or gRPC with IOS XE?  Checkout samples here: [yang/README.md](yang/README.md)
-
-*Coming Soon!!!*
 
 ## Guest Shell Use Cases
 
