@@ -1,0 +1,18 @@
+#simple IOS config in ansible
+---
+- name: Sample IOS config for Ansible 2.5+
+  hosts:
+    - ios-xe-mgmt.cisco.com
+    - ios-xe-mgmt-latest.cisco.com
+  gather_facts: no
+  vars_prompt:
+    - name: loopback_num
+      prompt: "What Loopback Number to Delete?"
+      private: no
+
+  tasks:
+
+  - name: Delete loopback {{loopback_num}}
+    ios_interface:
+      name: Loopback{{loopback_num}}
+      state: absent

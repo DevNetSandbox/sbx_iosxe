@@ -1,2 +1,7 @@
 [routers]
-10.10.20.48 ansible_python_interpreter="/usr/bin/env python"
+csr1000v-1 ansible_host=10.10.20.48
+ios-xe-mgmt.cisco.com ansible_port=8181
+ios-xe-mgmt-latest.cisco.com ansible_port=8181
+
+[switches]
+cat9k ansible_host=10.10.20.100

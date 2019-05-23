@@ -1,0 +1,26 @@
+#simple IOS config in ansible
+---
+- name: Sample IOS config for Ansible 2.5+
+  hosts:
+    - ios-xe-mgmt.cisco.com
+    - ios-xe-mgmt-latest.cisco.com
+  gather_facts: no
+  vars_prompt:
+    - name: loopback_num
+      prompt: "What Loopback Number to Configure?"
+      private: no
+    - name: loopback_ip
+      prompt: "What IP address to use? Example 192.168.1.1/32"
+      private: no
+
+  tasks:
+
+  - name: Create loopback {{loopback_num}}
+    ios_interface:
+      name: Loopback{{loopback_num}}
+      enabled: True
+      description: Created with Ansible
+  - name: Assign IP to loopback
+    ios_l3_interface:
+      name: Loopback{{loopback_num}}
+      ipv4: "{{loopback_ip}}"
