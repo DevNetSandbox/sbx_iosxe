@@ -12,8 +12,8 @@ HOST = 'ios-xe-mgmt.cisco.com'
 # use the NETCONF port for your IOS-XE device
 PORT = 10000
 # use the user credentials for your IOS-XE device
-USER = 'root'
-PASS = 'D_Vay!_10&'
+USER = 'developer'
+PASS = 'C1sco12345'
 
 
 # create a main() method

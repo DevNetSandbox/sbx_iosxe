@@ -1,9 +1,9 @@
 testbed:
     name: csr1000v
     tacacs:
-        username: cisco
+        username: developer
     passwords:
-        tacacs: "cisco_1234!"
+        tacacs: "C1sco12345"
         enable: C1sco12345
 
 devices:
