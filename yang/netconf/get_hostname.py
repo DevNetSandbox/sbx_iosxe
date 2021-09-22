@@ -8,7 +8,7 @@ import xml.dom.minidom
 
 # the variables below assume the user is leveraging the
 # always on sandbox.
-HOST = 'sandbox-iosxe-recomm-1.cisco.com'
+HOST = 'sandbox-iosxe-latest-1.cisco.com'
 # use the NETCONF port for your IOS-XE device
 PORT = 830
 # use the user credentials for your IOS-XE device
