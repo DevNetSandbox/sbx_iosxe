@@ -16,20 +16,16 @@ PASS = 'C1sco12345'
 
 
 def main():
-    url = f"https://{HOST}:{PORT}/restconf/data/ietf-interfaces:interfaces"
+    url = f"https://{HOST}:{PORT}/restconf/data/ietf-interfaces:interfaces/interface=Loopback800"
     headers = {
-    'Content-Type': 'application/yang-data+json',
     'Accept': 'application/yang-data+json',
+    'Content-Type': 'application/yang-data+json',
     }
 
-    response = requests.get(url, headers=headers, verify=False, auth=(USER, PASS)).json()
-    print(json.dumps(response, indent=2))
-
-    interface_list = response["ietf-interfaces:interfaces"]["interface"]
-    for interface in interface_list:
-        print(interface["name"])
+    response = requests.get(url, headers=headers, auth=(USER,PASS), verify=False)
+    if response.ok:
+        print(json.dumps(response.json(), indent=2))
 
 
 if __name__ == '__main__':
     sys.exit(main())
-

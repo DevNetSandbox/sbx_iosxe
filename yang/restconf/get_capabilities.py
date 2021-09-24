@@ -8,7 +8,7 @@ import sys
 # the variables below assume the user is leveraging the
 # always on sandbox.
 HOST = 'sandbox-iosxe-latest-1.cisco.com'
-# use the NETCONF port for your IOS-XE device
+# use the RESTCONF port for your IOS-XE device
 PORT = 443
 # use the user credentials for your IOS-XE device
 USER = 'developer'
@@ -23,8 +23,6 @@ def main():
     }
 
     response = requests.get(url, headers=headers, verify=False, auth=(USER, PASS)).json()
-    with open("capabilties.txt", "w") as f:
-      f.write(json.dumps(response, indent=2))
     print(json.dumps(response, indent=2))
 
 
