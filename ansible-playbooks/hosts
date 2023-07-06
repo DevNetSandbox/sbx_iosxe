@@ -5,3 +5,7 @@ ios-xe-mgmt-latest.cisco.com ansible_port=8181
 
 [switches]
 cat9k ansible_host=10.10.20.100
+
+[sandbox]
+sandbox-iosxe-latest-1.cisco.com
+sandbox-iosxe-recomm-1.cisco.com
